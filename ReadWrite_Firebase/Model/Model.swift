@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct Slides {
+    var id: Int
     var text: String
     var img: UIImage
 }

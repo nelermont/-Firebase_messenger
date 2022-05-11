@@ -37,7 +37,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-jd-8gh">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-jd-8gh">
                                 <rect key="frame" x="119" y="371" width="107" height="32"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
@@ -50,14 +50,20 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="regButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Htu-Ep-pK9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArY-y9-8dS">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ArY-y9-8dS">
                                 <rect key="frame" x="137" y="437" width="70.5" height="32"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign in">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rcM-Zq-uT5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -91,6 +97,12 @@
                 <constraint firstItem="OM0-GG-Sav" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eQa-KF-AQt"/>
             </constraints>
             <size key="customSize" width="344" height="596"/>
+            <connections>
+                <outlet property="mainDescription" destination="OMV-Zc-a7M" id="5n3-wT-RQJ"/>
+                <outlet property="mainImage" destination="s0k-ld-koi" id="VMV-K2-2hq"/>
+                <outlet property="regButtonOutlet" destination="Fhd-jd-8gh" id="ZVH-2E-60O"/>
+                <outlet property="signButtonOutlet" destination="ArY-y9-8dS" id="bTP-0i-ARa"/>
+            </connections>
             <point key="canvasLocation" x="343.47826086956525" y="-117.1875"/>
         </collectionViewCell>
     </objects>

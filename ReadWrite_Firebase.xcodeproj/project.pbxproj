@@ -21,6 +21,10 @@
 		52994F73282836B300AEC7E8 /* SlideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52994F71282836B300AEC7E8 /* SlideCollectionViewCell.swift */; };
 		52994F74282836B300AEC7E8 /* SlideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52994F72282836B300AEC7E8 /* SlideCollectionViewCell.xib */; };
 		529FAD0D2829522700305245 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD0C2829522700305245 /* Model.swift */; };
+		529FAD11282C269300305245 /* SlideClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD10282C269300305245 /* SlideClass.swift */; };
+		529FAD13282C283C00305245 /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD12282C283C00305245 /* RegViewController.swift */; };
+		529FAD15282C284A00305245 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD14282C284A00305245 /* SignViewController.swift */; };
+		529FAD17282C29B300305245 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD16282C29B300305245 /* AppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		52994F71282836B300AEC7E8 /* SlideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideCollectionViewCell.swift; sourceTree = "<group>"; };
 		52994F72282836B300AEC7E8 /* SlideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideCollectionViewCell.xib; sourceTree = "<group>"; };
 		529FAD0C2829522700305245 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		529FAD10282C269300305245 /* SlideClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideClass.swift; sourceTree = "<group>"; };
+		529FAD12282C283C00305245 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		529FAD14282C284A00305245 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		529FAD16282C29B300305245 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				529FAD0C2829522700305245 /* Model.swift */,
+				529FAD10282C269300305245 /* SlideClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				52994F652828172300AEC7E8 /* LoginViewController.swift */,
+				529FAD12282C283C00305245 /* RegViewController.swift */,
+				529FAD14282C284A00305245 /* SignViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -122,6 +133,7 @@
 		52994F682828173F00AEC7E8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				529FAD16282C29B300305245 /* AppViewController.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -217,11 +229,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529FAD11282C269300305245 /* SlideClass.swift in Sources */,
 				529FAD0D2829522700305245 /* Model.swift in Sources */,
 				52994F73282836B300AEC7E8 /* SlideCollectionViewCell.swift in Sources */,
+				529FAD15282C284A00305245 /* SignViewController.swift in Sources */,
 				52994F662828172300AEC7E8 /* LoginViewController.swift in Sources */,
 				52994F4428280E3700AEC7E8 /* AppDelegate.swift in Sources */,
+				529FAD17282C29B300305245 /* AppViewController.swift in Sources */,
 				52994F4628280E3700AEC7E8 /* SceneDelegate.swift in Sources */,
+				529FAD13282C283C00305245 /* RegViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

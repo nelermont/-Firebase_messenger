@@ -10,19 +10,16 @@ import UIKit
 class LoginViewController: UIViewController {
 
     var collectionView: UICollectionView!
+    let slideClass = SlideClass()
+    
     var slides:[Slides] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configCollectionView()
         
-        let slide1 = Slides(text: "text1", img: UIImage(named: "ImgReadWrite")!)
-        let slide2 = Slides(text: "text2", img: UIImage(named: "ImgReadWrite")!)
-        let slide3 = Slides(text: "text2", img: UIImage(named: "ImgReadWrite")!)
-        
-        slides.append(slide1)
-        slides.append(slide2)
-        slides.append(slide3)
+        slides = slideClass.getSlides()
     }
     
     
@@ -49,7 +46,8 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SlideCollectionViewCell.reuceId, for: indexPath) as! SlideCollectionViewCell
-        
+        let slide = slides[indexPath.row]
+        cell.configure(slide: slide)
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
