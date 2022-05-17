@@ -16,6 +16,8 @@ class SlideCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var regButtonOutlet: UIButton!
     @IBOutlet weak var signButtonOutlet: UIButton!
     static let reuceId = "SlideCollectionViewCell"
+    var delegate: LoginViewControllerDelegate!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -33,11 +35,11 @@ class SlideCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func regButton(_ sender: Any) {
-        
+        delegate.openRegVC()
     }
     
     @IBAction func signButton(_ sender: Any) {
-        
+        delegate.openSignInVC()
     }
     
   

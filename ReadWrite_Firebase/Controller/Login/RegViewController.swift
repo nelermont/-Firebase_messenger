@@ -9,21 +9,28 @@ import UIKit
 
 class RegViewController: UIViewController {
 
+    var delegate: LoginViewControllerDelegate!
+
+    @IBOutlet weak var mainView: UIView!
+    var tapGest: UITapGestureRecognizer?
+    
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+    @IBOutlet weak var rePassField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tapGest = UITapGestureRecognizer(target: self, action: #selector(endEditing))
+        mainView.addGestureRecognizer(tapGest!)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func closeVCAction(_ sender: Any) {
+        delegate.closeVC()
     }
-    */
-
+    @objc func endEditing() {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func regBtnAction(_ sender: Any) {
+    }
 }
