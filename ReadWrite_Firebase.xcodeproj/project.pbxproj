@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5222F64828413F6F009FD06A /* CheckField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222F64728413F6F009FD06A /* CheckField.swift */; };
+		5222F64A284145E2009FD06A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222F649284145E2009FD06A /* Service.swift */; };
 		52994F4428280E3700AEC7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52994F4328280E3700AEC7E8 /* AppDelegate.swift */; };
 		52994F4628280E3700AEC7E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52994F4528280E3700AEC7E8 /* SceneDelegate.swift */; };
 		52994F4B28280E3700AEC7E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52994F4928280E3700AEC7E8 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5222F64728413F6F009FD06A /* CheckField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckField.swift; sourceTree = "<group>"; };
+		5222F649284145E2009FD06A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		52994F4028280E3600AEC7E8 /* ReadWrite_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadWrite_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52994F4328280E3700AEC7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52994F4528280E3700AEC7E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			children = (
 				529FAD0C2829522700305245 /* Model.swift */,
 				529FAD10282C269300305245 /* SlideClass.swift */,
+				5222F64728413F6F009FD06A /* CheckField.swift */,
+				5222F649284145E2009FD06A /* Service.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,10 +238,12 @@
 				529FAD11282C269300305245 /* SlideClass.swift in Sources */,
 				529FAD0D2829522700305245 /* Model.swift in Sources */,
 				52994F73282836B300AEC7E8 /* SlideCollectionViewCell.swift in Sources */,
+				5222F64828413F6F009FD06A /* CheckField.swift in Sources */,
 				529FAD15282C284A00305245 /* SignViewController.swift in Sources */,
 				52994F662828172300AEC7E8 /* LoginViewController.swift in Sources */,
 				52994F4428280E3700AEC7E8 /* AppDelegate.swift in Sources */,
 				529FAD17282C29B300305245 /* AppViewController.swift in Sources */,
+				5222F64A284145E2009FD06A /* Service.swift in Sources */,
 				52994F4628280E3700AEC7E8 /* SceneDelegate.swift in Sources */,
 				529FAD13282C283C00305245 /* RegViewController.swift in Sources */,
 			);

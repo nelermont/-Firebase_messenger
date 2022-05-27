@@ -10,13 +10,19 @@ import UIKit
 class RegViewController: UIViewController {
 
     var delegate: LoginViewControllerDelegate!
-
+    var checkField = CheckField.shared
+    var service = Service.shared
+    
     @IBOutlet weak var mainView: UIView!
     var tapGest: UITapGestureRecognizer?
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passField: UITextField!
     @IBOutlet weak var rePassField: UITextField!
+    
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var passView: UIView!
+    @IBOutlet weak var repassView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,5 +38,25 @@ class RegViewController: UIViewController {
     }
     
     @IBAction func regBtnAction(_ sender: Any) {
+        if checkField.validField(emailView, emailField),
+           checkField.validField(passView, passField)
+        {
+            if passField.text == rePassField.text{
+                service.createNewUser(LoginField(email: emailField.text!, password: passField.text!)) { [weak self] code in
+                    switch code.code {
+                    case 0:
+                        print("Ошибка регистрации")
+                    case 1:
+                        print("Успешно зарегались")
+                        self?.service.confrimEmail()
+                    default:
+                        print("не понятно")
+                    }
+                }
+            } else {
+                
+            }
+    
+        }
     }
 }
