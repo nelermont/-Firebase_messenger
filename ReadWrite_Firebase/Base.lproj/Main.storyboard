@@ -285,7 +285,7 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YNn-ge-bxq">
                                                         <rect key="frame" x="0.0" y="0.0" width="354" height="40"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-0a-YfM">
+                                                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="email" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rSN-0a-YfM">
                                                                 <rect key="frame" x="10" y="3" width="334" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -309,7 +309,7 @@
                                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WLG-75-ab0">
                                                         <rect key="frame" x="0.0" y="57" width="354" height="40"/>
                                                         <subviews>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uI5-aT-PJK">
+                                                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="password" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uI5-aT-PJK">
                                                                 <rect key="frame" x="10" y="3" width="334" height="34"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -337,6 +337,9 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                                                <connections>
+                                                    <action selector="forgotPassword:" destination="AcS-bs-7id" eventType="touchUpInside" id="ThJ-9L-6Pg"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOq-54-ae6">
                                                 <rect key="frame" x="0.0" y="249.5" width="354" height="40"/>
@@ -361,6 +364,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SignInBtn:" destination="AcS-bs-7id" eventType="touchUpInside" id="3IF-XB-mWy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -394,6 +400,13 @@
                             <constraint firstItem="ca8-ft-oyt" firstAttribute="top" secondItem="zoR-5z-O0q" secondAttribute="top" id="lbO-rz-6lx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="rSN-0a-YfM" id="a81-6M-LmB"/>
+                        <outlet property="emailView" destination="YNn-ge-bxq" id="Qjb-BS-Iuj"/>
+                        <outlet property="mainView" destination="ca8-ft-oyt" id="qgv-Ae-h1a"/>
+                        <outlet property="passwordField" destination="uI5-aT-PJK" id="nEP-AI-kP3"/>
+                        <outlet property="passwordView" destination="WLG-75-ab0" id="9Hg-3G-yY9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0S7-ne-OTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

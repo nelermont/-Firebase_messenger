@@ -8,6 +8,11 @@
 import Foundation
 import UIKit
 
+
+enum AuthResponce{
+    case success, noVerify, error
+}
+
 struct Slides {
     var id: Int
     var text: String

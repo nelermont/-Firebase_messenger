@@ -10,6 +10,7 @@ import UIKit
 protocol LoginViewControllerDelegate {
     func openRegVC()
     func openSignInVC()
+    func startApp()
     func closeVC()
 }
 
@@ -63,7 +64,7 @@ extension LoginViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
 extension LoginViewController: LoginViewControllerDelegate{
-   
+
     func openRegVC() {
         regVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RegViewController") as? RegViewController
         regVC.delegate = self
@@ -86,7 +87,12 @@ extension LoginViewController: LoginViewControllerDelegate{
             regVC.view.removeFromSuperview()
             regVC = nil
         }
-   
     }
+    
+    func startApp() {
+        let startVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AppViewController")
+        self.view.insertSubview(startVC.view, at: 2)
+    }
+    
 }
 

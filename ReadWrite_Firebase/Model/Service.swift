@@ -18,7 +18,7 @@ class Service {
     //
     
     func createNewUser(_ data: LoginField, complition: @escaping (ResponseCode)->()) {
-        Auth.auth().createUser(withEmail: data.email, password: data.password) { [weak self] result, err in
+        Auth.auth().createUser(withEmail: data.email, password: data.password) {  result, err in
             if err == nil {
                 if result != nil {
                     let userId = result?.user.uid
@@ -36,11 +36,34 @@ class Service {
     }
     
     func confrimEmail() {
+        
         Auth.auth().currentUser?.sendEmailVerification(completion: { err in
             if err != nil {
                 print(err!.localizedDescription)
             }
         })
+    }
+    
+    
+    func authInApp(_ data: LoginField, complection: @escaping (AuthResponce) -> ()) {
+        Auth.auth().signIn(withEmail: data.email, password: data.password) { result, err in
+            if err != nil {
+                complection(.error)
+            } else {
+                if let result = result {
+                    if result.user.isEmailVerified {
+                        complection(.success)
+                    } else {
+                        self.confrimEmail()
+                        complection(.noVerify)
+                    }
+                }
+            }
+        }
+    }
+    func getUserStatus() {
+        // is isset
+        // auth?
     }
 }
 
