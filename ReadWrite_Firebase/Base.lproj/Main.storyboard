@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="29" y="36"/>
         </scene>
-        <!--Item-->
+        <!--Messages-->
         <scene sceneID="kU0-VS-xio">
             <objects>
                 <viewController id="uDa-Z2-lz1" sceneMemberID="viewController">
@@ -33,9 +33,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="bt2-sT-yd4"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="eyL-73-Mpj"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="message" catalog="system" selectedImage="message.fill" id="eyL-73-Mpj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5i-RZ-V4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,26 +59,33 @@
             </objects>
             <point key="canvasLocation" x="29" y="710"/>
         </scene>
-        <!--Item-->
+        <!--Users-->
         <scene sceneID="oWk-Aj-BDL">
             <objects>
-                <viewController id="DIX-T1-my1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lO1-Lu-Uaa">
+                <viewController storyboardIdentifier="UsersViewController" id="DIX-T1-my1" customClass="UsersViewController" customModule="ReadWrite_Firebase" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lO1-Lu-Uaa" customClass="UI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Авторизован" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPl-V2-o3c">
-                                <rect key="frame" x="113" y="252" width="189" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ewm-Dw-3Uh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2XJ-ad-yfn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ewm-Dw-3Uh" firstAttribute="leading" secondItem="2XJ-ad-yfn" secondAttribute="leading" id="Ta0-Vu-T7J"/>
+                            <constraint firstItem="Ewm-Dw-3Uh" firstAttribute="top" secondItem="2XJ-ad-yfn" secondAttribute="top" id="iQu-5a-KzF"/>
+                            <constraint firstItem="2XJ-ad-yfn" firstAttribute="trailing" secondItem="Ewm-Dw-3Uh" secondAttribute="trailing" id="pRL-M4-5Df"/>
+                            <constraint firstItem="2XJ-ad-yfn" firstAttribute="bottom" secondItem="Ewm-Dw-3Uh" secondAttribute="bottom" id="qk3-Cy-Zm1"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="QBD-HF-RoD"/>
+                    <tabBarItem key="tabBarItem" title="Users" image="person.2" catalog="system" selectedImage="person.2.fill" id="QBD-HF-RoD"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ewm-Dw-3Uh" id="RS9-KP-Kb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVX-rc-vj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -414,6 +421,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="message" catalog="system" width="128" height="113"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
         <image name="xmark.octagon" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">

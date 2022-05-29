@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="UserCellTableViewCell" customModule="ReadWrite_Firebase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5h-tB-Wyf">
+                        <rect key="frame" x="5" y="5" width="341" height="85"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="firebase_28dp.png" translatesAutoresizingMaskIntoConstraints="NO" id="lsZ-EX-uOY">
+                                <rect key="frame" x="20" y="17.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6ya-s5-44V"/>
+                                    <constraint firstAttribute="width" constant="50" id="wrv-3Y-RIR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsJ-IO-u9i">
+                                <rect key="frame" x="90" y="32" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33901673560000001" green="0.29974749680000001" blue="0.142896831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lsZ-EX-uOY" firstAttribute="centerY" secondItem="Z5h-tB-Wyf" secondAttribute="centerY" id="4MR-Si-zPI"/>
+                            <constraint firstAttribute="trailing" secondItem="AsJ-IO-u9i" secondAttribute="trailing" constant="20" id="7Ia-Aq-2uz"/>
+                            <constraint firstItem="lsZ-EX-uOY" firstAttribute="centerY" secondItem="Z5h-tB-Wyf" secondAttribute="centerY" id="T3m-GE-p4O"/>
+                            <constraint firstItem="AsJ-IO-u9i" firstAttribute="leading" secondItem="lsZ-EX-uOY" secondAttribute="trailing" constant="20" id="V5g-WF-Ybs"/>
+                            <constraint firstItem="lsZ-EX-uOY" firstAttribute="leading" secondItem="Z5h-tB-Wyf" secondAttribute="leading" constant="20" id="o2X-M5-JVW"/>
+                            <constraint firstItem="AsJ-IO-u9i" firstAttribute="centerY" secondItem="Z5h-tB-Wyf" secondAttribute="centerY" id="thU-kT-wJc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Z5h-tB-Wyf" secondAttribute="bottom" constant="5" id="7HP-WZ-AbA"/>
+                    <constraint firstAttribute="trailing" secondItem="Z5h-tB-Wyf" secondAttribute="trailing" constant="5" id="Lvg-o8-7vF"/>
+                    <constraint firstItem="Z5h-tB-Wyf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="mkw-9c-5yl"/>
+                    <constraint firstItem="Z5h-tB-Wyf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wH9-dC-u3u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="parentView" destination="Z5h-tB-Wyf" id="2t2-gh-XaS"/>
+                <outlet property="userImage" destination="lsZ-EX-uOY" id="6uC-1S-bQb"/>
+                <outlet property="userName" destination="AsJ-IO-u9i" id="RE1-61-baF"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="59.933035714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="firebase_28dp.png" width="56" height="56"/>
+    </resources>
+</document>

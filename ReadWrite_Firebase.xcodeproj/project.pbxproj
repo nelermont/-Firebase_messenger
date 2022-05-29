@@ -28,6 +28,9 @@
 		529FAD15282C284A00305245 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD14282C284A00305245 /* SignViewController.swift */; };
 		529FAD17282C29B300305245 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FAD16282C29B300305245 /* AppViewController.swift */; };
 		52AC360428425F5F00545B22 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 52AC360328425F5F00545B22 /* FirebaseFirestore */; };
+		52AC360B2843B67000545B22 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC360A2843B67000545B22 /* UsersViewController.swift */; };
+		52AC36102843B72000545B22 /* UserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC360E2843B72000545B22 /* UserCellTableViewCell.swift */; };
+		52AC36112843B72000545B22 /* UserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		529FAD12282C283C00305245 /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		529FAD14282C284A00305245 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		529FAD16282C29B300305245 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		52AC360A2843B67000545B22 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		52AC360E2843B72000545B22 /* UserCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellTableViewCell.swift; sourceTree = "<group>"; };
+		52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		52994F63282814DA00AEC7E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				52AC360D2843B6EA00545B22 /* Users */,
 				52994F69282835AE00AEC7E8 /* Slide */,
 			);
 			path = View;
@@ -141,6 +148,8 @@
 		52994F682828173F00AEC7E8 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				52AC36092843B60800545B22 /* Message */,
+				52AC36052843B5AC00545B22 /* Users */,
 				529FAD16282C29B300305245 /* AppViewController.swift */,
 			);
 			path = App;
@@ -153,6 +162,30 @@
 				52994F72282836B300AEC7E8 /* SlideCollectionViewCell.xib */,
 			);
 			path = Slide;
+			sourceTree = "<group>";
+		};
+		52AC36052843B5AC00545B22 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				52AC360A2843B67000545B22 /* UsersViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		52AC36092843B60800545B22 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		52AC360D2843B6EA00545B22 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				52AC360E2843B72000545B22 /* UserCellTableViewCell.swift */,
+				52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52AC36112843B72000545B22 /* UserCellTableViewCell.xib in Resources */,
 				52994F5028280E3B00AEC7E8 /* LaunchScreen.storyboard in Resources */,
 				52994F74282836B300AEC7E8 /* SlideCollectionViewCell.xib in Resources */,
 				52994F5828280FA700AEC7E8 /* GoogleService-Info.plist in Resources */,
@@ -240,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				529FAD11282C269300305245 /* SlideClass.swift in Sources */,
+				52AC360B2843B67000545B22 /* UsersViewController.swift in Sources */,
 				529FAD0D2829522700305245 /* Model.swift in Sources */,
 				52994F73282836B300AEC7E8 /* SlideCollectionViewCell.swift in Sources */,
 				5222F64828413F6F009FD06A /* CheckField.swift in Sources */,
@@ -250,6 +285,7 @@
 				5222F64A284145E2009FD06A /* Service.swift in Sources */,
 				52994F4628280E3700AEC7E8 /* SceneDelegate.swift in Sources */,
 				529FAD13282C283C00305245 /* RegViewController.swift in Sources */,
+				52AC36102843B72000545B22 /* UserCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
