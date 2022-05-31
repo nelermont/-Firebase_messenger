@@ -31,6 +31,7 @@
 		52AC360B2843B67000545B22 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC360A2843B67000545B22 /* UsersViewController.swift */; };
 		52AC36102843B72000545B22 /* UserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC360E2843B72000545B22 /* UserCellTableViewCell.swift */; };
 		52AC36112843B72000545B22 /* UserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */; };
+		52AC36142846888000545B22 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52AC36132846888000545B22 /* MessageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 				52994F5F2828113300AEC7E8 /* FirebaseMessaging in Frameworks */,
 				52994F612828113300AEC7E8 /* FirebaseStorage in Frameworks */,
 				52994F5D2828113300AEC7E8 /* FirebaseDatabase in Frameworks */,
+				52AC36142846888000545B22 /* MessageKit in Frameworks */,
 				52AC360428425F5F00545B22 /* FirebaseFirestore in Frameworks */,
 				52994F5B2828113300AEC7E8 /* FirebaseAuth in Frameworks */,
 			);
@@ -210,6 +212,7 @@
 				52994F5E2828113300AEC7E8 /* FirebaseMessaging */,
 				52994F602828113300AEC7E8 /* FirebaseStorage */,
 				52AC360328425F5F00545B22 /* FirebaseFirestore */,
+				52AC36132846888000545B22 /* MessageKit */,
 			);
 			productName = ReadWrite_Firebase;
 			productReference = 52994F4028280E3600AEC7E8 /* ReadWrite_Firebase.app */;
@@ -242,6 +245,7 @@
 			packageReferences = (
 				52994F592828113300AEC7E8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				52AC360228425F5F00545B22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				52AC36122846888000545B22 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = 52994F4128280E3600AEC7E8 /* Products */;
 			projectDirPath = "";
@@ -525,6 +529,14 @@
 				kind = branch;
 			};
 		};
+		52AC36122846888000545B22 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -552,6 +564,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 52AC360228425F5F00545B22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		52AC36132846888000545B22 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52AC36122846888000545B22 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

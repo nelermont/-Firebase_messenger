@@ -26,6 +26,8 @@ class UserCellTableViewCell: UITableViewCell {
     
     func settingCell() {
         parentView.layer.cornerRadius = 10
+        parentView.layer.borderColor = UIColor.black.cgColor
+        parentView.layer.borderWidth = 1.0
         userImage.layer.cornerRadius = userImage.frame.width/2
     }
     
