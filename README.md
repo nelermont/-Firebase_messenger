@@ -2,11 +2,11 @@
 Простой мессенджер 
 
 Стэк использован:
-UIKit
-Firebase (FirebaseCore, FirebaseAuth, FirebaseFirestore)
-Foundation
-UserDefaults
-MessageKit
+- UIKit
+- Firebase (FirebaseCore, FirebaseAuth, FirebaseFirestore)
+- Foundation
+- UserDefaults
+- MessageKit
 
 Что умеет сейчас:
 - Регистрация
@@ -17,4 +17,4 @@ MessageKit
 Пока в разработке, обновление кода каждые 2-3 дня
 
 
-<img src="https://raw.githubusercontent.com/nelermont/Micro-Beat-Machine/main/Micro%20Beat%20Machine/simulator_screenshot_6AF7D5D1-F981-4FFB-BE3D-61751DCC637D.png" width="500" />
+<img src="["](https://github.com/nelermont/-Firebase_messenger/blob/main/ReadWrite_Firebase/Assets.xcassets/Simulator1.imageset/Simulator1.png?raw=true) width="500" />
