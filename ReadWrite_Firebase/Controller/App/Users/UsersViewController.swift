@@ -30,7 +30,6 @@ class UsersViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
-    
 }
 
 extension UsersViewController: UITableViewDelegate, UITableViewDataSource {

@@ -32,7 +32,6 @@ class SignViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    
     @IBAction func SignInBtn(_ sender: Any) {
         if checkField.validField(emailView, emailField),
            checkField.validField(passwordView, passwordField) {

@@ -8,7 +8,7 @@
 import UIKit
 
 class RegViewController: UIViewController {
-
+    
     var delegate: LoginViewControllerDelegate!
     var checkField = CheckField.shared
     var service = Service.shared
@@ -61,7 +61,6 @@ class RegViewController: UIViewController {
             } else {
                 
             }
-    
         }
     }
 }
