@@ -26,7 +26,7 @@ class SlideCollectionViewCell: UICollectionViewCell {
 
     func configure(slide: Slides) {
         mainImage.image = slide.img
-        mainDescription.text = slide.text
+//        mainDescription.text = slide.text
    
         if slide.id == 3 {
             regButtonOutlet.isHidden = false

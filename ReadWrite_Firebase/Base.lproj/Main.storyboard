@@ -25,21 +25,36 @@
             </objects>
             <point key="canvasLocation" x="29" y="36"/>
         </scene>
-        <!--Messages-->
+        <!--Message-->
         <scene sceneID="kU0-VS-xio">
             <objects>
-                <viewController id="uDa-Z2-lz1" sceneMemberID="viewController">
+                <viewController id="uDa-Z2-lz1" customClass="MessageListViewController" customModule="ReadWrite_Firebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="816-8E-ew3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hDw-3K-mw4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bt2-sT-yd4"/>
                         <color key="backgroundColor" red="0.14835506679999999" green="0.14835506679999999" blue="0.14835506679999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hDw-3K-mw4" firstAttribute="leading" secondItem="bt2-sT-yd4" secondAttribute="leading" id="1gH-6P-j0U"/>
+                            <constraint firstItem="bt2-sT-yd4" firstAttribute="trailing" secondItem="hDw-3K-mw4" secondAttribute="trailing" id="3Xr-EU-Ol0"/>
+                            <constraint firstItem="hDw-3K-mw4" firstAttribute="top" secondItem="bt2-sT-yd4" secondAttribute="top" id="Z2n-xu-rRc"/>
+                            <constraint firstItem="bt2-sT-yd4" firstAttribute="bottom" secondItem="hDw-3K-mw4" secondAttribute="bottom" id="s0Y-vL-0dd"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Messages" image="message" catalog="system" selectedImage="message.fill" id="eyL-73-Mpj"/>
+                    <navigationItem key="navigationItem" title="Message" id="fG4-3e-uqP"/>
+                    <connections>
+                        <outlet property="tableView" destination="hDw-3K-mw4" id="nD9-lX-z3a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5i-RZ-V4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="29" y="1426"/>
+            <point key="canvasLocation" x="1731.8840579710147" y="1441.7410714285713"/>
         </scene>
         <!--App View Controller-->
         <scene sceneID="P3B-Ke-Xg1">
@@ -53,7 +68,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="DIX-T1-my1" kind="relationship" relationship="viewControllers" id="mHk-Ic-ufe"/>
-                        <segue destination="uDa-Z2-lz1" kind="relationship" relationship="viewControllers" id="6jg-PU-PKX"/>
+                        <segue destination="uur-Hq-rNR" kind="relationship" relationship="viewControllers" id="6jg-PU-PKX"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAH-i8-oJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -219,11 +234,11 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-Uy-usm">
-                                        <rect key="frame" x="360" y="53" width="45" height="31"/>
+                                        <rect key="frame" x="358" y="53" width="49" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.98467117550000005" green="0.77382797000000003" blue="0.22134354710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
+                                        <buttonConfiguration key="configuration" style="plain" title=" ">
                                             <imageReference key="image" image="xmark.circle" catalog="system" symbolScale="large"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -379,12 +394,12 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-va-wIq">
-                                        <rect key="frame" x="359" y="53" width="47" height="31"/>
+                                        <rect key="frame" x="359" y="52" width="49" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.98467117550000005" green="0.77382797000000003" blue="0.22134354710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="xmark.octagon" catalog="system" symbolScale="large"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=" ">
+                                            <imageReference key="image" image="xmark.circle" catalog="system" symbolScale="large"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="closeVCAction:" destination="AcS-bs-7id" eventType="touchUpInside" id="sop-j1-RQj"/>
@@ -418,7 +433,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0S7-ne-OTD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="35"/>
+            <point key="canvasLocation" x="1647.826086956522" y="34.821428571428569"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="4WB-6a-iKa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uur-Hq-rNR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Messages" image="message" catalog="system" selectedImage="message.fill" id="eyL-73-Mpj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1JE-gG-WRh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uDa-Z2-lz1" kind="relationship" relationship="rootViewController" id="jLf-lq-GY5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99y-rw-tZt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.73913043478262" y="1441.7410714285713"/>
         </scene>
     </scenes>
     <resources>
@@ -427,7 +461,6 @@
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="xmark.circle" catalog="system" width="128" height="121"/>
-        <image name="xmark.octagon" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

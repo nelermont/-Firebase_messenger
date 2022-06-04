@@ -31,12 +31,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Произвольный текст " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMV-Zc-a7M">
-                                <rect key="frame" x="30" y="228" width="284" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhd-jd-8gh">
                                 <rect key="frame" x="119" y="371" width="107" height="32"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -68,17 +62,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OMV-Zc-a7M" firstAttribute="leading" secondItem="OM0-GG-Sav" secondAttribute="leading" constant="30" id="3mH-9T-ewl"/>
                             <constraint firstItem="ArY-y9-8dS" firstAttribute="centerX" secondItem="OM0-GG-Sav" secondAttribute="centerX" id="6Iy-yi-9Pm"/>
                             <constraint firstAttribute="trailing" secondItem="YKa-gS-ok6" secondAttribute="trailing" id="7XG-8E-xtc"/>
                             <constraint firstAttribute="trailing" secondItem="s0k-ld-koi" secondAttribute="trailing" id="9QJ-BK-GyU"/>
                             <constraint firstItem="Fhd-jd-8gh" firstAttribute="leading" secondItem="OM0-GG-Sav" secondAttribute="leading" constant="119" id="CcJ-qu-8Iv"/>
                             <constraint firstItem="ArY-y9-8dS" firstAttribute="top" secondItem="Fhd-jd-8gh" secondAttribute="bottom" constant="34" id="MrN-iR-mDq"/>
                             <constraint firstAttribute="bottom" secondItem="ArY-y9-8dS" secondAttribute="bottom" constant="127" id="PKL-r2-EOM"/>
-                            <constraint firstItem="OMV-Zc-a7M" firstAttribute="top" secondItem="YKa-gS-ok6" secondAttribute="bottom" constant="80" id="S7S-cK-NBX"/>
                             <constraint firstItem="s0k-ld-koi" firstAttribute="top" secondItem="OM0-GG-Sav" secondAttribute="top" id="SXY-nI-2dG"/>
                             <constraint firstItem="ArY-y9-8dS" firstAttribute="centerX" secondItem="OM0-GG-Sav" secondAttribute="centerX" id="Sl0-Un-Cdu"/>
-                            <constraint firstAttribute="trailing" secondItem="OMV-Zc-a7M" secondAttribute="trailing" constant="30" id="WCL-WY-8dm"/>
                             <constraint firstItem="YKa-gS-ok6" firstAttribute="top" secondItem="OM0-GG-Sav" secondAttribute="top" constant="100" id="WPR-Bm-Tty"/>
                             <constraint firstAttribute="bottom" secondItem="s0k-ld-koi" secondAttribute="bottom" id="bcd-nX-3m2"/>
                             <constraint firstItem="YKa-gS-ok6" firstAttribute="leading" secondItem="OM0-GG-Sav" secondAttribute="leading" id="hu3-ln-cvY"/>
@@ -98,7 +89,6 @@
             </constraints>
             <size key="customSize" width="344" height="596"/>
             <connections>
-                <outlet property="mainDescription" destination="OMV-Zc-a7M" id="5n3-wT-RQJ"/>
                 <outlet property="mainImage" destination="s0k-ld-koi" id="VMV-K2-2hq"/>
                 <outlet property="regButtonOutlet" destination="Fhd-jd-8gh" id="ZVH-2E-60O"/>
                 <outlet property="signButtonOutlet" destination="ArY-y9-8dS" id="bTP-0i-ARa"/>
