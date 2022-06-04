@@ -82,5 +82,45 @@ class Service {
             }
         }
     }
+    
+    
+    
+    
+    //MARK: -- Messanger
+    
+    func sendMessage(otherId: String?, convId: String?, message: Message, text: String, completion: @escaping (Bool)->()) {
+        if convId == nil {
+            //создаем новую переписку
+        } else {
+            let msg: [String:Any] = [
+                "date": Date(),
+                "sender": message.sender.senderId,
+                "text": text
+            ]
+            Firestore.firestore().collection("conversations").document(convId!).collection("messages").addDocument(data: msg) { err in
+                if err == nil {
+                    completion(true)
+                } else {
+                    completion(false)
+                }
+            }
+        }
+    }
+    
+    func updateConvo() {
+        
+    }
+    
+    func getConvoId() {
+        
+    }
+    
+    func getAllMessage() {
+        
+    }
+    
+    func getOneMessage() {
+        
+    }
 }
 

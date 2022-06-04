@@ -33,6 +33,7 @@
 		52AC36112843B72000545B22 /* UserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */; };
 		52AC36142846888000545B22 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52AC36132846888000545B22 /* MessageKit */; };
 		52AC36172848E99200545B22 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC36162848E99200545B22 /* MessageListViewController.swift */; };
+		52AC361A284B974200545B22 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AC3619284B974200545B22 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		52AC360E2843B72000545B22 /* UserCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellTableViewCell.swift; sourceTree = "<group>"; };
 		52AC360F2843B72000545B22 /* UserCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCellTableViewCell.xib; sourceTree = "<group>"; };
 		52AC36162848E99200545B22 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		52AC3619284B974200545B22 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				52AC36162848E99200545B22 /* MessageListViewController.swift */,
+				52AC3619284B974200545B22 /* ChatViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				5222F64A284145E2009FD06A /* Service.swift in Sources */,
 				52994F4628280E3700AEC7E8 /* SceneDelegate.swift in Sources */,
 				529FAD13282C283C00305245 /* RegViewController.swift in Sources */,
+				52AC361A284B974200545B22 /* ChatViewController.swift in Sources */,
 				52AC36102843B72000545B22 /* UserCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
