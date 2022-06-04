@@ -17,4 +17,4 @@
 Пока в разработке, обновление кода каждые 2-3 дня
 
 
-<img src="["](https://github.com/nelermont/-Firebase_messenger/blob/main/ReadWrite_Firebase/Assets.xcassets/Simulator1.imageset/Simulator1.png?raw=true) width="500" />
+<img src="(https://github.com/nelermont/-Firebase_messenger/blob/main/ReadWrite_Firebase/Assets.xcassets/Simulator1.imageset/Simulator1.png?raw=true)" width="500" />
