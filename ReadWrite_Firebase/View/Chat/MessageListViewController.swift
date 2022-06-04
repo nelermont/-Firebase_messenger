@@ -17,7 +17,6 @@ class MessageListViewController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
 }
 
